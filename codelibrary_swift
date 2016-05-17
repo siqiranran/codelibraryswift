@@ -1,0 +1,43 @@
+//
+
+//  ViewController.swift
+
+//  redesign
+
+//
+
+//  Created by Sukie on 4/5/16.
+
+//  Copyright © 2016 Sukie. All rights reserved.
+
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+   @IBOutlet weak var WebView: UIWebView!
+
+   override func viewDidLoad() {
+
+       super.viewDidLoad()
+
+       let url = NSURL(string:“http://sukieranran.com/AAU/codelibrary/”);
+
+       let requestObj = NSURLRequest(URL:url!);
+
+       WebView.loadRequest(requestObj);
+
+       // Do any additional setup after loading the view, typically from a nib.
+
+   }
+
+   override func didReceiveMemoryWarning() {
+
+       super.didReceiveMemoryWarning()
+
+       // Dispose of any resources that can be recreated.
+
+   }
+
+}
